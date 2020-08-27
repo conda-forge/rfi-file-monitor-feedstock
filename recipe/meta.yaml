@@ -1,5 +1,5 @@
 {% set name = "rfi-file-monitor" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rfi-file-monitor-{{ version }}.tar.gz
-  sha256: b7c65dd922a60d793df7a67781a6f2cfb2641d72dca14ce77ac84f37f3bcece5
+  sha256: 7d2f11bbe3ac81b1ddfa19fcd8b1d8812bc726a985a46f40e9e4a988cc228873
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - gtk3
     - adwaita-icon-theme
     - librsvg
+    - bugsnag
 
 test:
   imports:
