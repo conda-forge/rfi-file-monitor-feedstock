@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
   run:
     - boto3
     - munch
     - paramiko
     - pygobject
-    - python >=3.8
+    - python
     - pyyaml
     - watchdog
     - gtk3
