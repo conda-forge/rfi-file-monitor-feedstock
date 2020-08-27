@@ -50,7 +50,6 @@ test:
     - rfi_file_monitor.operations.sftp_uploader
   commands:
     - pip check
-    - rfi-file-monitor --help
   requires:
     - pip
 
