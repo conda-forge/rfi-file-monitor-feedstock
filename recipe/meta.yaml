@@ -11,11 +11,10 @@ source:
   sha256: 7d2f11bbe3ac81b1ddfa19fcd8b1d8812bc726a985a46f40e9e4a988cc228873
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - rfi-file-monitor = rfi_file_monitor:main
-  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
