@@ -11,22 +11,21 @@ source:
   sha256: 7d2f11bbe3ac81b1ddfa19fcd8b1d8812bc726a985a46f40e9e4a988cc228873
 
 build:
-  number: 0
-  noarch: python
+  number: 1
   entry_points:
     - rfi-file-monitor = rfi_file_monitor:main
-  script: {{ PYTHON }} -m pip install . -vv
+  skip: True  # [py<38]
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
   run:
     - boto3
     - munch
     - paramiko
     - pygobject
-    - python >=3.8
+    - python
     - pyyaml
     - watchdog
     - gtk3
@@ -51,7 +50,6 @@ test:
     - rfi_file_monitor.operations.sftp_uploader
   commands:
     - pip check
-    - rfi-file-monitor --help
   requires:
     - pip
 
