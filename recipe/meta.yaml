@@ -11,7 +11,7 @@ source:
   sha256: bdf3d24b30c3ea126a5042dca6c18f72cbe625e74387847bd31814adbcba44ff
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - rfi-file-monitor = rfi_file_monitor:main
   skip: true  # [py<38]
