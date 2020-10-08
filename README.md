@@ -5,11 +5,9 @@ Home: https://github.com/RosalindFranklinInstitute/rfi-file-monitor
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rfi-file-monitor-feedstock/blob/master/LICENSE.txt)
 
 Summary: Easy to use file monitor GUI with user-definable operations
-
-
 
 Current build status
 ====================
