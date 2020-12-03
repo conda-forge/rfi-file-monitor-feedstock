@@ -11,7 +11,7 @@ source:
   sha256: b07d531d6dc0293e13599151e55680ca16e38ed6088369caa7740722845fb7df
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - rfi-file-monitor = rfi_file_monitor:main
   skip: true  # [py<38]
@@ -27,7 +27,7 @@ requirements:
     - pygobject
     - python
     - pyyaml
-    - watchdog
+    - watchdog !=0.10.4
     - gtk3
     - adwaita-icon-theme
     - librsvg
