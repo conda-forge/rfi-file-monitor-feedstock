@@ -1,5 +1,5 @@
 {% set name = "rfi-file-monitor" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rfi-file-monitor-{{ version }}.tar.gz
-  sha256: 31cff21911eb4f4543a67cb5e17fa49716a92e632d5f7a3264d974feee405c20
+  sha256: 8d9f0ee6cab3af9f77dc7622f0a4e6c3bfea0830f5d2d7ec25563c16abd585bd
 
 build:
   number: 0
@@ -82,7 +82,7 @@ test:
     - rfi_file_monitor.utils.widgetparams
     - rfi_file_monitor.version
   commands:
-    - pip check
+    - pip check  # [not aarch64]
     - test -f $SP_DIR/rfi_file_monitor/docs/queue_manager.pango  # [unix]
     - test -f $SP_DIR/rfi_file_monitor/operations/docs/template.pango  # [unix]
     - test -f $SP_DIR/rfi_file_monitor/engines/docs/template.pango  # [unix]
