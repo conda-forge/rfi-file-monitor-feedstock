@@ -82,7 +82,7 @@ test:
     - rfi_file_monitor.utils.widgetparams
     - rfi_file_monitor.version
   commands:
-    - pip check
+    - pip check  # [not aarch64]
     - test -f $SP_DIR/rfi_file_monitor/docs/queue_manager.pango  # [unix]
     - test -f $SP_DIR/rfi_file_monitor/operations/docs/template.pango  # [unix]
     - test -f $SP_DIR/rfi_file_monitor/engines/docs/template.pango  # [unix]
