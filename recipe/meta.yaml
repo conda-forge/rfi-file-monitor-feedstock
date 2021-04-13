@@ -1,5 +1,5 @@
 {% set name = "rfi-file-monitor" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rfi-file-monitor-{{ version }}.tar.gz
-  sha256: 6ca4bac712f7c266e38086acc91e007ce5f62f147225c1e9c3327937dce8e57f
+  sha256: 6857e073bb35354407a021ee64d38f3622af58514e9066143941d1895a7abc55
 
 build:
   number: 0
@@ -38,6 +38,7 @@ requirements:
     - tenacity
     - requests
     - pika
+    - python-dateutil
 
 test:
   imports:
@@ -102,3 +103,4 @@ about:
 extra:
   recipe-maintainers:
     - tschoonj
+    - LAshemilt
