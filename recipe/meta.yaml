@@ -38,6 +38,7 @@ requirements:
     - tenacity
     - requests
     - pika
+    - python-dateutil
 
 test:
   imports:
