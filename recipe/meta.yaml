@@ -1,5 +1,5 @@
 {% set name = "rfi-file-monitor" %}
-{% set version = "0.2.9" %}
+{% set version = "0.2.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rfi-file-monitor-{{ version }}.tar.gz
-  sha256: 8e0095c3e9f6a4696cd4844addadc025176b75e077532e770ad120496e51bb79
+  sha256: b52da489eb2f0e35082bf7a2444095bea7db2737bd194c7a920053cae81ecad0
 
 build:
   number: 0
