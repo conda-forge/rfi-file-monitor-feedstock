@@ -39,6 +39,8 @@ requirements:
     - requests
     - pika
     - python-dateutil
+    - pyscicat
+    - botocore
 
 test:
   imports:
