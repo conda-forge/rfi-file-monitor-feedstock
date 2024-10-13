@@ -11,7 +11,7 @@ source:
   sha256: 5ed96e5dded8e0c4455bd8df3cd1cfd93b822b783dea81ce568933742391079f
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - rfi-file-monitor = rfi_file_monitor:main
   skip: true  # [py<38]
@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python
   run:
     - boto3
